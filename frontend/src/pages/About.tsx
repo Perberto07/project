@@ -28,6 +28,12 @@ function About(){
                 <p> "You also, like living stones, are being built into a spiritual house to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ."</p>
             </div>
 
+            <hr className="divider" />
+
+            <div className="text-body">
+                <p> "You also, like living stones, are being built into a spiritual house to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ."</p>
+            </div>
+
         </div>
     )
 }
