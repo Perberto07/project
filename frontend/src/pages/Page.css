@@ -1,0 +1,44 @@
+.Home{
+    background-color: burlywood; /* Background color for the entire space */
+    position: fixed;
+    top: 115px;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    overflow: auto;
+}
+
+.CLSF{
+    min-width: 1270px;
+    height: auto;    
+}
+
+.ACLSF {
+    width: 1270px; /* Minimum width of the image */
+    height: auto;
+}
+
+.text-header{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 25px;
+}
+
+.text-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 100px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.divider {
+    width: 100%; /* Set the width of the divider */
+    height: 2px; /* Set the height of the divider */
+    background-color: #ccc; /* Set the color of the divider */
+    margin: 20px 0; /* Set margin top and bottom to create space */
+    border: none; /* Remove any default border */
+}

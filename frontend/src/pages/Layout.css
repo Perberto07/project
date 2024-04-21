@@ -1,0 +1,96 @@
+/* styles.css */
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 200px; /* Adjust width as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #10393c; /* Sidebar background color */
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #64b5b2; /* Link color */
+}
+
+/* Active link */
+/*.sidebar ul li a.active {
+    background-color: #ddd; /* Active link background color */
+
+/* Icons */
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    margin-left: 200px; /* Adjust according to sidebar width */
+    padding: 410px 0px;
+    background-color: #ffffff;
+    top: 100px;
+    position: fixed;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+}
+
+.content-container {
+    order: 2; /* Display the content second */
+    text-align: left; /* Center text */
+    margin-top: 20px; /* Add some space between image and text */
+}
+
+.home{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*
+display: flex;
+justify-content: center; 
+align-items: center;
+background-color: #549ea6;
+color: #261f1f;
+padding: 20px 100px;
+position: fixed;
+margin-right: 20px;
+top: 0;
+width: calc(100% - 100px); 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+/* Button Styles */
+.btn-primary {
+    background-color: #62dee7; /* Primary button background color */
+    color: rgb(81, 85, 197); /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #3d3f73; /* Button hover background color */
+}
+
+
+
