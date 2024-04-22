@@ -1,5 +1,4 @@
 import "./Page.css";
-import "../App.css";
 import CLSFImage from '../images/CLSF.jpg';
 
 
@@ -12,7 +11,7 @@ function Home(){
 
         <div  className="Home">
 
-            <div>
+            <div className="IMG ">
                 <img src={CLSFImage} alt="CLSF" className="CLSF" />
             
             </div>

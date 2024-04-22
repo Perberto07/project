@@ -4,7 +4,7 @@ import ACLSFImage from '../images/ACLSF.jpg';
 function About(){
     return(
         <div  className="Home">
-            <div>
+            <div className="IMG">
                 <img src={ACLSFImage} alt="ACLSF" className="ACLSF" />
             </div>
 

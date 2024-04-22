@@ -1,29 +1,54 @@
-import "./Layout.css";
-function Login(){
-    return(
-    
-        <div className="main-content">login
-        <form>
+import axios from "axios";
+import { useState } from 'react';
+
+function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    console.log("Submitting login request with username:", username);
+  
+    axios.post('http://localhost:8081/login', { username, password })
+      .then(res => {
+        console.log("Login successful:", res.data);
+      })
+      .catch(err => {
+        console.error("Login failed:", err);
+        setError('Failed to login. Please try again.'); // Display error to the user
+      });
+  }
+
+  return (
+    <div className="main-content">
+      <form onSubmit={handleSubmit}>
         <div className='mb-2'>
-            <label htmlFor="amount">Enter Username</label>
-            <input
-              type="text"
-              id="amount"
-              placeholder='Enter Amount'
-            />
-          </div>
-          <div className='mb-2'>
-            <label htmlFor="name">Enter Password</label>
-            <input
-              type="text"
-              id="name"
-              placeholder='Enter your Name'
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
-          </form>
-          </div>
-    
-    )
-    }
-    export default Login
+          <label htmlFor="username">Enter Username: </label>
+          <input
+            type="text"
+            id="username"
+            placeholder='Enter Username'
+            value={username}
+            onChange={e => setUsername(e.target.value)}
+          />
+        </div>
+
+        <div className='mb-2'>
+          <label htmlFor="password">Enter Password: </label>
+          <input
+            type="password" // Changed type to password
+            id="password"
+            placeholder='Enter Password'
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
+      {error && <div className="error-message">{error}</div>}
+    </div>
+  );
+}
+
+export default Login;

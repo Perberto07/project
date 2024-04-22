@@ -30,3 +30,9 @@
     height: auto;
     border-radius: 150%;
 }
+.chatbot-container {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 999; /* Ensure the chatbot appears above other content */
+  }

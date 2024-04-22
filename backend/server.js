@@ -39,6 +39,22 @@ app.post('/Donation', (req, res) => {
         return res.json(data);
     });
 });
+app.post('/login', (req, res) => {
+    const sql = "SELECT * FROM login WHERE username=? AND password = ?";
+    const values = [
+        req.body.username, 
+        req.body.password // Correct the order of values
+    ];
+    db.query(sql, [req.body.username, req.body.password], (err, data) => {
+        if (err) return res.json("error");
+        if(data.length > 0){
+            return res.json('/')
+        }
+        else{
+            return res.json("No record")
+        }
+    });
+});
 
 const port = 8081;
 app.listen(port, () => {
