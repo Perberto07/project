@@ -30,15 +30,16 @@ app.get("/Donation", (req, res) => {
 });
 
 app.post('/Donation', (req, res) => {
-    const sql = "INSERT into donation (`Name`, `amount`) VALUES ?";
+    const sql = "INSERT INTO donation (`Name`, `amount`) VALUES ?";
     const values = [
-        [req.body.Name, req.body.amount] // Correct the order of values
+        [req.body.name, req.body.amount] // Corrected the order and wrapped in an array
     ];
-    db.query(sql, [values], (err, data) => {
+    db.query(sql, [values], (err, result ) => {
         if (err) return res.json(err);
-        return res.json(data);
+        return res.json(result);
     });
 });
+
 app.post('/login', (req, res) => {
     const sql = "SELECT * FROM login WHERE username=? AND password = ?";
     const values = [

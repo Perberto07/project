@@ -11,9 +11,9 @@ const Donation: React.FC<DonationProps> = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     axios.post('http://localhost:8081/Donation', { name, amount })
     .then((res) => {
+      console.log("data inputed:", res.data);
       navigate('/Donation');
     })  
     .catch(err => console.log(err));

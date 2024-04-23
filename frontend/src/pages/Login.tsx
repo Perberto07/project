@@ -1,10 +1,13 @@
 import axios from "axios";
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+ // const navigate = useNavigate();
+  
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -13,6 +16,7 @@ function Login() {
     axios.post('http://localhost:8081/login', { username, password })
       .then(res => {
         console.log("Login successful:", res.data);
+        //navigate('/')
       })
       .catch(err => {
         console.error("Login failed:", err);

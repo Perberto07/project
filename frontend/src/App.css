@@ -1,6 +1,35 @@
+/* Page.css */
+.chatbox {
+  height: 100px;
+  width: auto;
+  position: fixed;
+  bottom: 50px; /* Adjust the distance from the bottom as needed */
+  right: 50px; /* Adjust the distance from the right as needed */
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.chatbox span {
+  position: absolute;
+}
+
+.chatbox span:last-child {
+  opacity: 1;
+}
+
 .chatbot-container {
   position: fixed;
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
-  right: 20px; /* Adjust the distance from the right as needed */
+  bottom: 80px; /* Adjust the distance from the bottom as needed */
+  right: 140px; /* Adjust the distance from the right as needed */
   z-index: 999; /* Ensure the chatbot appears above other content */
+  opacity: 1;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth animation */
+}
+
+.show-chatbot .chatbot-container {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
 }
