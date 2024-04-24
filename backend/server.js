@@ -2,9 +2,24 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 const app = express();
+const multer = require("multer");
+const path = require("path");
+
 
 app.use(cors());
 app.use(express.json()); // Add this line to parse JSON bodies
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'src/images'); // Change db to cb
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + "_" + Date.now() + path.extname(file.originalname)); // Change res to cb
+    }
+})
+const Upload = multer({
+    storage: storage
+})
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -57,7 +72,13 @@ app.post('/login', (req, res) => {
     });
 });
 
+
+app.post('/admin', Upload.single('image'), (req, res) => {
+    console.log(req.file);
+});
+
+
 const port = 8081;
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
-});
+});``
