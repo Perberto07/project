@@ -6,7 +6,7 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
- // const navigate = useNavigate();
+ const navigate = useNavigate();
   
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -16,7 +16,7 @@ function Login() {
     axios.post('http://localhost:8081/login', { username, password })
       .then(res => {
         console.log("Login successful:", res.data);
-        //navigate('/')
+        navigate('/')
       })
       .catch(err => {
         console.error("Login failed:", err);
