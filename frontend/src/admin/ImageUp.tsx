@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import "../pages/Layout.css";
 
 
 
@@ -21,7 +22,7 @@ function ImageUp(){
             }
             
         return (
-        <div className="container">
+        <div className="main-content">
                 <input type="file" onChange={handlefile}/>
                 <button onClick={handleUpload}>Upload</button>
         </div>
