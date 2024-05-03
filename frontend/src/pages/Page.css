@@ -80,36 +80,7 @@
     text-align: justify;
 }
 
-.crud-container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
 
-.table-container {
-    display: flex;
-    flex-direction: column;
-}
-.table {
-    border-collapse: collapse;
-    width: 100%; /* Ensures table takes up all available width */
-}
-
-thead, tbody {
-     
-    border: 1px solid #0d172d; /* Adjust border styles as needed */
-    flex: 1; /* This makes both thead and tbody take up equal space */
-}
-
-thead {
-    flex-direction: row;
-    align-items: flex-start; /* Aligns items to the start (left) */
-    padding-right: 20px; /* Add some padding for spacing */
-}
-
-tbody {
-    overflow: auto; /* Enable scrolling if the content exceeds the container's height */
-}
 
 
     

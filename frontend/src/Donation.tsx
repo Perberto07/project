@@ -24,7 +24,7 @@ const Donation: React.FC<DonationProps> = () => {
   return (
     <>
     <Layout/>
-    <div className="main-content">
+    <div className="Home">
       <div className="donation">
         <form onSubmit={handleSubmit}>
           <h1>DONATION</h1>

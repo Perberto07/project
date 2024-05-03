@@ -1,1 +1,39 @@
-   
+.main-content {
+    display:flexbox;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 200px; /* Adjust according to sidebar width */
+    background-color: #ffffff;
+    top: 100px;
+    position: fixed;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+}
+
+.content-container {
+    order: 2; /* Display the content second */
+    text-align: left; /* Center text */
+    margin-top: 20px; /* Add some space between image and text */
+}
+
+.home{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.donation{
+    display: flex;
+    height: 100%;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
