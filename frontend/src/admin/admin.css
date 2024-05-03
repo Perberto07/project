@@ -1,0 +1,71 @@
+.admin{
+    background-color: burlywood;
+    position: fixed;
+    top: 115px;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    overflow: auto;
+}
+.newscontainer {
+    display: flex;
+    width: 80%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+     /* Ensure the container takes up full height */
+    margin-top: 10%;
+    margin-left: 25%;
+
+}
+.newsdetails {
+    text-align: center; /* Center text within the details */
+}
+.admincard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.add-button {
+  position: fixed; /* Adjust position as needed */
+  bottom: 20px; /* Adjust distance from bottom */
+  right: 20px; /* Adjust distance from right */
+  width: 120px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  background-color: #007bff; /* Example background color */
+  color: white; /* Example text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+.add-button:hover {
+  background-color: #841010; /* Example background color on hover */
+}
+.delbut{
+    background-color: #e92e2e;
+}
+.upbut{
+    background-color: #29bc38;
+}
+.delbut:hover {
+    background-color: #e1d4d4; /* Example background color on hover */
+}
+.upbut:hover {
+    background-color: #e1d4d4; /* Example background color on hover */
+}
+.content{
+    width: 80%;
+    margin-top: 10%;
+    background-color: aqua;
+}
+
+
+  
+  

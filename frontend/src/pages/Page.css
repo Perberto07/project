@@ -1,5 +1,6 @@
-.Home{
-    background-color: burlywood; /* Background color for the entire space */
+.Home {
+    background-color: #ADEFD1;
+    color: #013220;
     position: fixed;
     top: 115px;
     bottom: 0;
@@ -8,46 +9,34 @@
     overflow: auto;
 }
 
-.CLSF{
-    min-width: 1270px;
-    height: auto;    
-}
-
-.ACLSF {
-    width: 1270px; /* Minimum width of the image */
+.CLSF {
+    width: 1320px;
     height: auto;
 }
 
-.text-header{
+.CLSF2 {
+    width: 1270px;
+    height: auto;
+}
+
+.CLSF3 {
+    width: 1270px;
+    height: auto;
+}
+
+.ACLSF {
+    width: 1270px;
+    height: auto;
+}
+
+.text-header {
     display: flex;
     justify-content: left;
     align-items: center;
     margin-left: 25px;
 }
 
-.text-body{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin-left: 50px;
-    margin-right: 100px;
-    font-size: 20px;
-    text-align: left;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.divider {
-    width: 100%; /* Set the width of the divider */
-    height: 2px; /* Set the height of the divider */
-    background-color: #ccc; /* Set the color of the divider */
-    margin: 20px 0; /* Set margin top and bottom to create space */
-    border: none; /* Remove any default border */
-}
-<<<<<<< Updated upstream
-.IMG{
+.text-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +45,74 @@
     font-size: 25px;
     text-align: justify;
 }
-=======
 
->>>>>>> Stashed changes
+.italic{
+    font-style: italic;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+    border: none;
+}
+
+.IMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 100px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+.NewsUpdate {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 29px;
+    margin-right: 3px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.crud-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%; /* Ensures table takes up all available width */
+}
+
+thead, tbody {
+     
+    border: 1px solid #0d172d; /* Adjust border styles as needed */
+    flex: 1; /* This makes both thead and tbody take up equal space */
+}
+
+thead {
+    flex-direction: row;
+    align-items: flex-start; /* Aligns items to the start (left) */
+    padding-right: 20px; /* Add some padding for spacing */
+}
+
+tbody {
+    overflow: auto; /* Enable scrolling if the content exceeds the container's height */
+}
+
+
+    
+
+
 

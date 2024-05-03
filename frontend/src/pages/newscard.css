@@ -1,0 +1,25 @@
+.newscontainer{
+   width: 100%;
+   padding-left: 20px;
+   padding-right: 20px;
+.newscard{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-style: double;
+    background-color: rgb(39, 190, 190);
+
+}
+.line{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.h5{
+    align-items: center;
+}
+.phrases{
+    text-align: justify;
+    margin-left: 7%;
+    margin-right: 7%;
+}

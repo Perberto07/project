@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Layout from './pages/Layout';
 
 interface DonationProps {}
 
@@ -21,12 +22,14 @@ const Donation: React.FC<DonationProps> = () => {
   } 
 
   return (
+    <>
+    <Layout/>
     <div className="main-content">
-      <div className='w-50 bg-white rounded p-3'>
+      <div className="donation">
         <form onSubmit={handleSubmit}>
           <h1>DONATION</h1>
           <div className='mb-2'>
-            <label htmlFor="amount">Enter Amount</label>
+            <label htmlFor="amount">Amount:</label>
             <input
               type="text"
               id="amount"
@@ -37,7 +40,7 @@ const Donation: React.FC<DonationProps> = () => {
             />
           </div>
           <div className='mb-2'>
-            <label htmlFor="name">Enter your Name</label>
+            <label htmlFor="name">Name : </label>
             <input
               type="text"
               id="name"
@@ -51,6 +54,7 @@ const Donation: React.FC<DonationProps> = () => {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

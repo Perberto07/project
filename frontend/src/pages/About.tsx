@@ -1,8 +1,11 @@
 import "./Page.css";
 import ACLSFImage from '../images/ACLSF.jpg';
+import Layout from "./Layout";
 
 function About(){
     return(
+        <>
+        <Layout/>
         <div  className="Home">
             <div className="IMG">
                 <img src={ACLSFImage} alt="ACLSF" className="ACLSF" />
@@ -12,15 +15,11 @@ function About(){
                 <h1>Welcome to CLSF</h1>
             </div>
 
-            <div className="text-body italic">
-                <p> "You also, like living stones, are being built into a spiritual house to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ."<br/>
-                1 Peter 2:5 (NIV)
-                </p>
-
+            <div className="text-body">
+                <p> "You also, like living stones, are being built into a spiritual house to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ."</p>
             </div>
 
             <hr/>
-
             <div className="text-header">
                 <h1>ABOUT US</h1>
             </div>
@@ -37,10 +36,11 @@ function About(){
                     </p>
             </div>
             <hr/>
-            
+
             <div className="text-header">
                 <h1>Our Vision</h1>
             </div>
+
             <div className="text-body">
                 <p> We are a Christ-centered, Spirit-filled, missions-oriented church, where every member is a minister, transforming individuals, 
                     communities and nations through the Gospel of the Kingdom of God
@@ -62,6 +62,7 @@ function About(){
             <div className="text-header">
                 <h1>Core Values</h1>
             </div>
+
             <div className="text-body">
                 <dl>
                     <dt><b>C</b>hrist-Likeness (Romans 8:29)</dt>
@@ -84,6 +85,7 @@ function About(){
             <div className="text-header">
                 <h1>STATEMENT OF FAITH</h1> 
             </div>
+
             <div className="text-body">
             <p>We believe in:
                 <ol>
@@ -97,8 +99,12 @@ function About(){
                 </ol>
                 </p>
             </div> 
+
+
+            
+
         </div>
-        
-    ) 
+        </>
+    )
 }
 export default About;

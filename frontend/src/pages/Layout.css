@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #10393c; /* Sidebar background color */
+    background-color: #00203F; /* Sidebar background color */
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -26,7 +26,7 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #64b5b2; /* Link color */
+    color: #C0CD9B; /* Link color */
 }
 
 /* Active link */
@@ -40,11 +40,10 @@
 
 /* Main Content */
 .main-content {
-    display: flex;
+    display:flexbox;
     justify-content: center; 
     align-items: center;
     margin-left: 200px; /* Adjust according to sidebar width */
-    padding: 410px 0px;
     background-color: #ffffff;
     top: 100px;
     position: fixed;
@@ -90,6 +89,17 @@ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 .btn-primary:hover {
     background-color: #3d3f73; /* Button hover background color */
+}
+.donation{
+    display: flex;
+    height: 100%;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
 }
 
 
